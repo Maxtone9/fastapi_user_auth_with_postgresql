@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="/user_registeration/" enctype="multipart/form-data">
+        <h1>Register</h1>
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name" id="full_name" required><br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required><br><br>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" required><br><br>
+        <label for="profile_picture">Profile Picture</label>
+        <input type="file" name="profile_picture" id="profile_picture" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
